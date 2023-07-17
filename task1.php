@@ -1,4 +1,11 @@
 <?php
 echo "Enter N number: ";
-$N = readline();
+$i = 0;
+$n = readline();
+while ($i <= $n):
+    echo $i;
+    $i++;
+endwhile;
+
+
 
