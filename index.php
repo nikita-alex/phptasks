@@ -14,5 +14,5 @@ $name1 = new Name(
 );
 $name->setPrivateName($name1);
 $private = $name->getPrivateName()->getArray();
-//var_dump($name);
+var_dump($name);
 var_dump($private);
