@@ -1,16 +1,26 @@
 <?php
+echo "Enter N number: ";
 $i = 0;
-$fib1 = 1;
-$fib2 = 0;
-$fib_sum = 0;
-$n = 6;
+$sum = 0;
+$n = 10;
 while ($i < $n):
-    $fib_sum = $fib1 + $fib2;
-    $fib1 = $fib2;
-    $fib2 = $fib_sum;
+    $num = rand(0, 10);
+    if ($i == 0){
+        print_r($num . "\n");
+        $prev = $num;
+    } else {
+        if ($num > $prev) {
+            print_r($num . " больше " . $prev);
+        } elseif ($num < $prev) {
+            print_r($num . " меньше " . $prev);
+        } else {
+            print_r($num . " равно " . $prev);
+        }
+        print_r("\n");
+        $prev = $num;
+    }
     $i++;
 endwhile;
-print_r($fib_sum);
 
 
 
