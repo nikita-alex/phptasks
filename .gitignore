@@ -1,9 +1,0 @@
-*.cache
-.idea
-.phpstan
-.DS_Store
-/coverage
-/vendor
-/clover.xml
-.phpunit.cache
-/composer.lock
