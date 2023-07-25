@@ -1,16 +1,16 @@
 <?php
+const N = 10;
 $i = 0;
 $fib1 = 1;
 $fib2 = 0;
-$fib_sum = 0;
-$n = 6;
-while ($i < $n):
-    $fib_sum = $fib1 + $fib2;
+$fibSum = 0;
+while ($i < N):
+    $fibSum = $fib1 + $fib2;
     $fib1 = $fib2;
-    $fib2 = $fib_sum;
+    $fib2 = $fibSum;
     $i++;
 endwhile;
-print_r($fib_sum);
+print_r($fibSum);
 
 
 

@@ -1,11 +1,10 @@
 <?php
-echo "Enter N number: ";
+const N = 10;
 $i = 0;
 $sum = 0;
-$n = 10;
-while ($i < $n):
+while ($i < N):
     $num = rand(0, 10);
-    if ($i == 0){
+    if ($i == 0) {
         print_r($num . "\n");
         $prev = $num;
     } else {
