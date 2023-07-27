@@ -1,10 +1,23 @@
 <?php
-const N = 5;
+const N = 11;
 
-$i = 0;
-$initArray = [];
+$elemRemaining = N;
+$j = 1;
+while ($elemRemaining > 0):
+    $i = 0;
 
-while ($i < N):
-    array_push($initArray, rand(0,9));
-    $i++;
+    if ($j > $elemRemaining) {
+        $j = $elemRemaining;
+    }
+
+    while ($i < $j):
+        print_r(rand(0, 9) . " ");
+        $elemRemaining--;
+        $i++;
+    endwhile;
+
+    print_r("\n");
+    $j++;
+
 endwhile;
+
