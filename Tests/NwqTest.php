@@ -5,7 +5,7 @@ namespace Tests;
 use App\Name;
 use PHPUnit\Framework\TestCase;
 
-class NwqTest extends TestCase
+class  NwqTest extends TestCase
 {
     /**
      * @test
